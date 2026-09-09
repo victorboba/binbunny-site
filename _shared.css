@@ -28,7 +28,7 @@ nav a { color:var(--muted); font-size:15px; white-space:nowrap; }
 .steps { padding:8px 0 40px; } .steps ol { padding-left:20px; color:var(--muted); font-size:16px; }
 .pricing { display:grid; grid-template-columns:1fr 1fr; gap:16px; padding:0 0 48px; }
 .pricing .card strong { font-size:28px; display:block; margin:6px 0; }
-footer { border-top:1px solid var(--line); padding:24px 20px 40px; color:var(--muted); font-size:14px; display:flex; flex-wrap:wrap; gap:16px; justify-content:space-between; }
+footer { border-top:1px solid var(--line); padding:24px 20px 72px; color:var(--muted); font-size:14px; display:flex; flex-wrap:wrap; gap:16px; justify-content:space-between; }
 article { max-width:720px; padding:32px 0 60px; } article h1 { font-size:34px; letter-spacing:-.02em; } article h2 { font-size:21px; margin-top:28px; } article p, article li { color:var(--ink); font-size:16px; }
 .note { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; color:var(--muted); font-size:15px; }
 @media (max-width:760px){
@@ -45,6 +45,6 @@ article { max-width:720px; padding:32px 0 60px; } article h1 { font-size:34px; l
   .grid { padding:12px 0 28px; }
   .pricing .card strong { font-size:24px; }
   article { padding:20px 0 40px; } article h1 { font-size:28px; }
-  footer { flex-direction:column; gap:8px; padding:20px 20px 32px; }
+  footer { flex-direction:column; gap:8px; padding:20px 20px calc(56px + env(safe-area-inset-bottom)); }
 }
 @media (max-width:380px){ .brand { font-size:18px; } nav a { font-size:13px; } }
