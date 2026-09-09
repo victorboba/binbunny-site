@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["629DLNN554.com.somexai.inventory"],
+        "components": [
+          { "/": "/l/*", "comment": "Location labels" }
+        ]
+      }
+    ]
+  },
+  "webcredentials": { "apps": ["629DLNN554.com.somexai.inventory"] }
+}

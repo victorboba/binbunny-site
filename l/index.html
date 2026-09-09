@@ -1,0 +1,21 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/_shared.css"><link rel="icon" href="/_logo.svg" type="image/svg+xml"><title>BinBunny label</title>
+<meta name="apple-itunes-app" content="app-argument=https://binbunny.app/l/"></head><body><header class="top wrap"><a class="brand" href="/"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="8" y="26" width="48" height="30" rx="8" fill="#1667e6"/><rect x="8" y="26" width="48" height="8" rx="4" fill="#0f4fb8"/><ellipse cx="24" cy="18" rx="5" ry="13" fill="#fff" stroke="#1b1b1f" stroke-width="2"/><ellipse cx="40" cy="18" rx="5" ry="13" fill="#fff" stroke="#1b1b1f" stroke-width="2"/><ellipse cx="24" cy="18" rx="2.2" ry="9" fill="#ffb3c1"/><ellipse cx="40" cy="18" rx="2.2" ry="9" fill="#ffb3c1"/><circle cx="32" cy="34" r="13" fill="#fff" stroke="#1b1b1f" stroke-width="2"/><circle cx="27" cy="32" r="1.8" fill="#1b1b1f"/><circle cx="37" cy="32" r="1.8" fill="#1b1b1f"/><path d="M30 37.5c1 1.2 3 1.2 4 0" stroke="#1b1b1f" stroke-width="1.6" fill="none" stroke-linecap="round"/><path d="M31 36.2h2l-1 1.4z" fill="#ffb3c1"/></svg> BinBunny</a><nav><a href="/#how">How it works</a><a href="/#pricing">Pricing</a><a href="/support">Support</a><a href="/privacy">Privacy</a></nav></header>
+<main class="wrap"><article>
+<h1>This is a BinBunny label</h1>
+<p id="msg">Opening the box in BinBunny…</p>
+<p><a class="cta" id="open" href="#">Open in BinBunny</a></p>
+<p class="note">Don't have the app? BinBunny is an AI inventory app for iPhone: photograph an item and it's identified and filed in a box. <a href="/">Learn more</a>.</p>
+</article></main><footer class="wrap"><span>© 2026 SomexAI Applications Group, LLC · BinBunny is a SomexAI product</span><span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/support">Support</a> · <a href="mailto:support@somexai.com">support@somexai.com</a></span></footer>
+<script>
+(function(){
+  var m = location.pathname.match(/\/l\/([0-9a-fA-F-]{36})/);
+  var id = m ? m[1].toLowerCase() : null;
+  var open = document.getElementById('open'), msg = document.getElementById('msg');
+  if (!id) { msg.textContent = 'This link is missing a label id.'; open.style.display='none'; return; }
+  var deep = 'somexinventory://location/' + id;
+  open.href = deep;
+  // Try the custom scheme once; if the app isn't installed nothing happens and the page stays.
+  setTimeout(function(){ location.href = deep; }, 150);
+  setTimeout(function(){ msg.textContent = 'If BinBunny didn\'t open, tap the button below.'; }, 1800);
+})();
+</script></body></html>
