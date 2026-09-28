@@ -15,13 +15,12 @@ nav a { color:var(--muted); font-size:15px; white-space:nowrap; }
 .hero p.lead { font-size:19px; color:var(--muted); margin:0 0 22px; }
 .cta { display:inline-flex; align-items:center; gap:10px; background:var(--ink); color:var(--bg); padding:12px 18px; border-radius:12px; font-weight:600; }
 .cta:hover { text-decoration:none; opacity:.9; }
-.phone { background:var(--card); border:1px solid var(--line); border-radius:28px; padding:18px; box-shadow:0 20px 50px rgba(0,0,0,.08); }
-.phone .row { display:flex; gap:12px; align-items:center; padding:10px 0; border-bottom:1px solid var(--line); }
-.phone .row:last-child { border-bottom:0; }
-.thumb { width:48px; height:48px; border-radius:10px; background:linear-gradient(135deg,#ffd58a,#ff9c6b); flex:none; }
-.thumb.b { background:linear-gradient(135deg,#9bd0ff,#6a8dff); } .thumb.c { background:linear-gradient(135deg,#c6f2c1,#69c98d); }
-.row .t { font-weight:600; font-size:15px; } .row .s { color:var(--muted); font-size:13px; }
-.badge { margin-left:auto; font-size:12px; padding:3px 8px; border-radius:999px; background:rgba(22,103,230,.12); color:var(--accent); font-weight:600; }
+.hero-shot { display:flex; justify-content:center; }
+.hero-shot img, .shots img { width:100%; max-width:300px; height:auto; border-radius:28px; border:1px solid var(--line); box-shadow:0 20px 50px rgba(0,0,0,.12); background:#000; }
+.screens { padding:8px 0 24px; } .screens h2 { margin:0 0 14px; }
+.shots { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+.shots figure { margin:0; text-align:center; } .shots img { max-width:100%; border-radius:22px; }
+.shots figcaption { margin-top:10px; color:var(--muted); font-size:14px; }
 .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; padding:24px 0 40px; }
 .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; }
 .card h3 { margin:0 0 6px; font-size:17px; } .card p { margin:0; color:var(--muted); font-size:15px; }
@@ -39,9 +38,10 @@ article { max-width:720px; padding:32px 0 60px; } article h1 { font-size:34px; l
   .hero h1 { font-size:31px; }
   .hero p.lead { font-size:17px; }
   .cta { display:flex; justify-content:center; width:100%; padding:14px 18px; }
-  .phone { padding:14px; border-radius:22px; }
-  .row .t { font-size:14px; } .row .s { font-size:12px; } .badge { font-size:11px; }
   .grid, .pricing { grid-template-columns:1fr; }
+  .hero-shot img { max-width:240px; }
+  .shots { display:flex; overflow-x:auto; scroll-snap-type:x mandatory; gap:14px; padding-bottom:8px; margin:0 -20px; padding-left:20px; padding-right:20px; }
+  .shots figure { flex:0 0 68%; scroll-snap-align:center; }
   .grid { padding:12px 0 28px; }
   .pricing .card strong { font-size:24px; }
   article { padding:20px 0 40px; } article h1 { font-size:28px; }
