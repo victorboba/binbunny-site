@@ -25,7 +25,7 @@ nav a { color:var(--muted); font-size:15px; white-space:nowrap; }
 .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; }
 .card h3 { margin:0 0 6px; font-size:17px; } .card p { margin:0; color:var(--muted); font-size:15px; }
 .steps { padding:8px 0 40px; } .steps ol { padding-left:20px; color:var(--muted); font-size:16px; }
-.pricing { display:grid; grid-template-columns:1fr 1fr; gap:16px; padding:0 0 48px; }
+.pricing { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; padding:0 0 48px; }
 .pricing .card strong { font-size:28px; display:block; margin:6px 0; }
 footer { border-top:1px solid var(--line); padding:24px 20px 72px; color:var(--muted); font-size:14px; display:flex; flex-wrap:wrap; gap:16px; justify-content:space-between; }
 article { max-width:720px; padding:32px 0 60px; } article h1 { font-size:34px; letter-spacing:-.02em; } article h2 { font-size:21px; margin-top:28px; } article p, article li { color:var(--ink); font-size:16px; }
